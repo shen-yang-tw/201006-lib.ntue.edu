@@ -381,6 +381,16 @@ ol.listDecimalRow.badge>li:before {
   line-height: 15px;
 }
 
+.banner .uk-cover-background {
+  background-image: url(../img/banner-bg.jpg) !important;
+}
+
+@media (min-width: 1500px) {
+  .banner .uk-cover-background {
+    background-image: url(../img/banner.jpg) !important;
+  }
+}
+
 @media (min-width: 768px) {
   .index .max_height {
     min-height: inherit;
