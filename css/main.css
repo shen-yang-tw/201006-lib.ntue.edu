@@ -1515,11 +1515,11 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 
 .offcanvas>div {width: calc(100%*5 / 12);}
 
-#logoMenuBar>div:last-child {
+/* #logoMenuBar>div:last-child {
     width: 100%;
     position: absolute;
     left: 0;
-}
+} */
 #logoMenuBar>div:last-child h4 {
     margin-top: -5px !important;
 }
@@ -1535,7 +1535,9 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
     margin-top: -7px;
     max-height: 47px;
 }
-
+#logoMenuBar .logo.uk-flex-right>img {
+  max-height: 50px;
+}
 }
 
 @media (min-width:1350px) {
