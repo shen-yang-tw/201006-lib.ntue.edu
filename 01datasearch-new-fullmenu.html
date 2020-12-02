@@ -68,151 +68,64 @@
           </ul>
         </nav>
       </div>
-      <div class="uk-position-relative uk-padding-remove">
+        <div class="uk-position-relative uk-padding-remove">
         <!-- <div class="bg_secondary opacity20 uk-overlay-panel"></div> -->
         <div class="uk-container uk-container-center">
-          <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-5-6 uk-width-medium-2-3 uk-width-large-1-4 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img class="uk-width-1-1" alt="logo" title="logo" src="img/logo.svg"></a></div>
+          <div id="logoMenuBar" class="py-1 py-xl-2 uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
+            <div class="pl-1 uk-width-5-6 uk-width-large-1-1">
+              <div class="m-0 h-100 uk-grid uk-grid-small uk-grid-divider uk-grid-match" data-uk-grid-margin>
+                <div class="pl-0 uk-width-1-3 uk-width-medium-1-2">
+                  <a class="logo px-1 text-center uk-width-1-1" href="index.html" title="首頁">
+                    <img class="uk-width-1-1" alt="logo" title="logo" src="img/logo.svg">
+                  </a>
+                </div>
+                <div class="pr-0 uk-width-2-3 uk-width-medium-1-2">
+                  <a class="px-1 uk-width-1-1 uk-vertical-align" href="http://www.stm.org.tw/STM_library/" title="系統首頁">
+                    <div class="uk-width-1-1 uk-vertical-align-middle">
+                      <h2 class="fontSize1 fontSize1_2@s fontSize1_4@l m-0 uk-text-bold">電子資源管理系統</h2>
+                      <small class="fontSize07 fontSize1@s uk-text-bold uk-hidden-small">E-Resource Gateway</small>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div id="btn_canvas" class="uk-width-1-6 uk-width-medium-1-3 uk-vertical-align uk-text-right uk-hidden-large">
+            <div id="btn_canvas" class="uk-width-1-6 uk-vertical-align uk-text-right uk-hidden-large">
               <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
             </div>
           </div>
           <!-- #logoMenuBar -->
           <div id="offcanvas" class="uk-offcanvas">
             <nav class="uk-offcanvas-bar bg_primary">
-              <ul class="text-white uk-nav uk-nav-offcanvas">
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">圖書館</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">首頁</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">English</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a>
-                  </div>
-                </li>
+              <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon uk-text-contrast" data-uk-nav>
+                <!-- <li class="uk-parent">
+                <a href="#" title="#">資料庫</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="#" title="#">Item</a></li>
+                  <li><a href="#" title="#">Item</a></li>
+                </ul>
+              </li> -->
+                <li><a href="#" title="#">資料庫</a></li>
+                <li><a href="#" title="#">電子期刊</a></li>
+                <li><a href="#" title="#">電子書</a></li>
+                <li><a href="#" title="#">網路資源</a></li>
+                <li><a href="#" title="#">我的資源</a></li>
                 <li class="uk-nav-divider"></li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">資料庫</a>
-                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
-                  </div>
-                  <ul class="toggle hidden pl-4 pr-2 pb-2">
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">題名瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">類型瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">出版商瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">免費資源</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">新到資料庫</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門收藏</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門推薦</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">電子期刊</a>
-                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
-                  </div>
-                  <ul class="toggle hidden pl-4 pr-2 pb-2">
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">刊名瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">出版社/平台</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">館藏JCR清單</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">新到電子期刊</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門收藏</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門推薦</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">電子書</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">醫學資源</a>
-                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
-                  </div>
-                  <ul class="toggle hidden pl-4 pr-2 pb-2">
-                    <li class="uk-display-inline-block">
-                      <a href="#" class="padding_small pl-4">電子期刊</a>
-                      <ul>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">刊名瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">JCR主題瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">出版社/平台</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">新到電子期刊</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
-                      </ul>
-                    </li>
-                    <li class="uk-display-inline-block">
-                      <a href="#" class="padding_small pl-4">資料庫</a>
-                      <ul>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">題名瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">類型瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">出版商瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">免費資源</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">新到資料庫</a></li>
-                        <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">書目管理軟體</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">講習課程</a>
-                  </div>
-                </li>
-                <li class="border-bottom border-dark uk-parent">
-                  <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">我的資源</a>
-                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
-                  </div>
-                  <ul class="toggle hidden pl-4 pr-2 pb-2">
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">資料庫</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">電子期刊</a></li>
-                    <li class="uk-display-inline-block"><a href="#" class="padding_small">電子書</a></li>
-                  </ul>
-                </li>
+                <li><a href="#" title="#">圖書館</a></li>
+                <li><a href="#" title="#">最新消息</a></li>
+                <li><a href="#" title="#">常見問題</a></li>
+                <li><a href="#" title="#">使用說明</a></li>
+                <li><a href="#" title="#">English</a></li>
+                <li><a href="#login" data-uk-modal="{center:true}"><i class="fas fa-user-circle fa-fw"></i>登入</a></li>
               </ul>
             </nav>
           </div>
           <!-- #offcanvas -->
         </div>
+        <!-- <hr class="border_white_opacity3 uk-margin-remove uk-position-relative"> -->
       </div>
       <!-- .borderB1 -->
     </header>
-    <!-- header -->
+  <!-- header -->
   </div>
   <!-- .banner -->
   <div class="menuBar bg_primary uk-position-relative uk-width-1-1">
