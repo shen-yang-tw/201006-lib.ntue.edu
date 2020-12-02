@@ -440,9 +440,10 @@ ol.listDecimalRow.badge>li:before {
   #logoMenuBar .uk-grid-divider {
     margin: 0;
   }
-  /* #logoMenuBar .uk-grid-divider>* {
-    padding: 0;
-  } */
+  #logoMenuBar .uk-grid-divider>* {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   #logoMenuBar .uk-grid-divider>[class*=uk-width-medium-]:not(.uk-width-medium-1-1):nth-child(n+2) {
     border-left: 1px solid black;
   }
