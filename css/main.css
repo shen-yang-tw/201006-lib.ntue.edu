@@ -1704,16 +1704,30 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
   }
 }
 
-/* logo block width */
+/* logo block width - 2021-2-4 */
+#logoMenuBar {
+  justify-content: space-between;
+}
+#logoMenuBar>div {
+  width: auto;
+}
+#logoMenuBar>div:first-child {
+  flex-grow: 1;
+}
+#logoMenuBar>div:first-child>div.uk-grid>div:first-child {
+  width: 150px;
+  flex-grow: 1;
+}
+#logoMenuBar>div:first-child>div.uk-grid>div:last-child {
+  width: calc(100% - 150px);
+}
 @media (min-width: 960px) {
-  #logoMenuBar>div:first-child>div:first-child {
-    width: calc(100%*2/3);
+  #logoMenuBar>div:first-child>div.uk-grid>div {
+    width: auto !important;
+    max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
-  #logoMenuBar>div:first-child>div:first-child {
-    width: calc(100%/2);
-  }
 }
 /* logo block width */
 
@@ -1750,7 +1764,6 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
   max-width: 100%;
   font-size: 1rem;
   vertical-align: middle;
-  max-height: 70px;
 }
 
 footer,
