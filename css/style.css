@@ -337,6 +337,9 @@ ol.listDecimalRow.badge>li:before {
 /* ----------- iPhone ----------- */
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
+  #logoMenuBar>div {
+    width: auto;
+  }
 }
 
 @supports not (-webkit-touch-callout: none) {
