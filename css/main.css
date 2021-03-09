@@ -1875,10 +1875,11 @@ footer a {
 /* ----------- iPhone ----------- */
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
-    #logoMenuBar>div {
+  /* 2021-3-9 Fixing logo text erros on iphone */
+    /* #logoMenuBar>div {
     padding: 0 !important;
     width: 50%;
-  }
+  } */
 }
 
 @supports not (-webkit-touch-callout: none) {
